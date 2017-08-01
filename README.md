@@ -1,6 +1,7 @@
-# Project Title
+# Pixel Cross
 
-One Paragraph of project description goes here
+Pixel Cross is a puzzle game about pixels. I've first met it at newgrounds,
+though I can't remember the name of the game there.
 
 ## Getting Started
 
@@ -10,8 +11,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
+* [node.js](https://nodejs.org/)
+
+* [npm](https://www.npmjs.com/)
+
+* [yeoman](http://yeoman.io/)
 ```
-Give examples
+npm install -g yo
 ```
 
 ### Installing
@@ -68,7 +74,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
 ## Authors
 
@@ -78,7 +84,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
