@@ -1,5 +1,8 @@
 # Pixel Cross
 
+_For temp reference:_
+[Snake HTML5](http://www.competa.com/blog/how-to-build-a-snake-game-using-javascript-and-html5-canvas/)
+
 Pixel Cross is a puzzle game about pixels. I've first met it at [Newgrounds](http://www.newgrounds.com/),
 though I can't remember the name of the game there.
 
