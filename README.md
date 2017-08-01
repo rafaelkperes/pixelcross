@@ -1,19 +1,24 @@
 # Pixel Cross
 
-Pixel Cross is a puzzle game about pixels. I've first met it at newgrounds,
+Pixel Cross is a puzzle game about pixels. I've first met it at [Newgrounds](http://www.newgrounds.com/),
 though I can't remember the name of the game there.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+This project is scaffolded through the [yo webapp generator](https://github.com/yeoman/generator-webapp#readme).
+You may find additional instructions on its Github repo.
+
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install - instructions may be found in the links.
 
 * [node.js](https://nodejs.org/)
 
 * [npm](https://www.npmjs.com/)
+
+* [gulp](https://gulpjs.com/)
 
 * [yeoman](http://yeoman.io/)
 
@@ -37,7 +42,13 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Preview: `gulp serve`
+
+Run tests: `gulp serve:test`
+
+Build: `gulp`
+
+Preview dist: `gulp serve:dist`
 
 ### Break down into end to end tests
 
