@@ -16,9 +16,6 @@ What things you need to install the software and how to install them
 * [npm](https://www.npmjs.com/)
 
 * [yeoman](http://yeoman.io/)
-```
-npm install -g yo
-```
 
 ### Installing
 
