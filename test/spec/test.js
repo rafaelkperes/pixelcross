@@ -1,10 +1,11 @@
 (function () {
   'use strict';
 
-  describe('Give it some context', function () {
-    describe('maybe a bit more context here', function () {
-      it('should run here few assertions', function () {
-
+  describe('Pixelcross game', function () {
+    describe('Pixel Data Structure', function () {
+      it('starts being EMPTY', function () {
+        var pixel = new Pixel()
+        expect(pixel.state).to.equal(PixelState.EMPTY)
       });
     });
   });
