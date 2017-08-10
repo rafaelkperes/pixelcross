@@ -1,31 +1,45 @@
-const pxcanvasid = 'pixelcross-canvas';
-var   pxState;
+const pxcanvasid = 'pixelcross-canvas'
+var   pxState
 
 $( document ).ready(function() {
-  pxState = new Pixelcross(pxcanvasid);
-  pxState.init();
+  pxState = new Pixelcross(pxcanvasid)
+  pxState.init()
 });
 
-var Pixelcross = function(canvasid) {
-  this.canvas  = undefined;
-  this.context = undefined;
+var Canvas2dPainter = function(canvasElement) {
+  this.canvas  = canvasElement
+  this.context = this.canvas.getContext('2d')
+
+  this.borderRectangle = function (x, y, hx, hy, color) {
+    var ctx = this.context
+    ctx.strokeStyle = color
+    ctx.strokeRect(x, y, hx, hy)
+  }
+
+  this.fillRectangle = function (x, y, hx, hy, color) {
+    var ctx = this.context
+    ctx.fillStyle = color
+    ctx.fillRect(x, y, hx, hy)
+  }
+
+  this.paintRectangle = function (x, y, hx, hy, color) {
+    this.borderRectangle(x, y, hx, hy, color)
+    this.fillRectangle(x, y, hx, hy, color)
+  }
+}
+
+var Pixelcross = function(canvasId) {
+  this.canvas  = document.getElementById(canvasId)
+  if (this.canvas)
+    this.painter = new Canvas2dPainter(this.canvas)
 
   this.init = function() {
-    this.canvas  = document.getElementById(canvasid);
-    this.context = this.canvas.getContext('2d');
+    var painter = this.painter;
 
-    var ctx = this.context;
+    painter.fillRectangle(30, 30, 20, 20, 'green')
 
-    ctx.fillStyle = 'green';
-    ctx.fillRect(30, 30, 20, 20);
+    painter.borderRectangle(60, 60, 20, 20, 'purple')
 
-    ctx.fillStyle = 'purple';
-    ctx.fillRect(60, 60, 20, 20);
-
-    ctx.strokeStyle = 'darkgreen';
-    ctx.strokeRect(60, 60, 20, 20);
-
-    ctx.strokeStyle = 'black';
-    ctx.strokeRect(90, 90, 20, 20);
+    painter.paintRectangle(90, 90, 20, 20, 'black')
   };
 }
